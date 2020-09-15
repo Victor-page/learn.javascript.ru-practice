@@ -1,0 +1,68 @@
+/* Без класса .open меню будет закрыто: */
+
+.menu ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+}
+
+.menu .title {
+  cursor: pointer;
+}
+
+.menu .title::before {
+  content: "▶ ";
+  font-size: 80%;
+  color: green;
+}
+
+/* …А с ним (с классом .open) стрелка будет меняться, и список будет показываться: */
+
+.menu.open .title::before {
+  content: "▼ ";
+}
+
+.menu.open ul {
+  display: block;
+}
+
+/* ========Добавить кнопку закрытия============= */
+body {
+  margin: 10px auto;
+  width: 470px;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: 0.3em;
+  font-size: 1.1em;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 0.5em;
+}
+
+.pane {
+  background: #edf5e1;
+  padding: 10px 20px 10px;
+  border-top: solid 2px #c4df9b;
+
+  position: relative;
+}
+
+.remove-button {
+  font-size: 110%;
+  color: darkred;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  display: block;
+}
