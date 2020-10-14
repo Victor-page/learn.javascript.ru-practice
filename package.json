@@ -1,0 +1,22 @@
+{
+  "name": "learn.javascript.ru-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Victor-live/learn.javascript.ru-practice.git"
+  },
+  "author": "YOUR_NAME <YOUR_EMAIL>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Victor-live/learn.javascript.ru-practice/issues"
+  },
+  "homepage": "https://github.com/Victor-live/learn.javascript.ru-practice#readme",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
